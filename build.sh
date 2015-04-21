@@ -1,11 +1,11 @@
 #!/bin/sh
 
 SDK=$(ls -1d /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iP* | tail -n1)
-+echo SDK is at $SDK > build.log 2>&1
+echo SDK is at $SDK > build.log 2>&1
 
 # remove object files to build nice n clean
 echo '[+] Removing old object files ...'
-+rm *.o *.a >/dev/null 2>&1
+rm *.o *.a >/dev/null 2>&1
 
 # compile the Objective-C stuff
 echo '[+] Compiling Objective-C files ...'
